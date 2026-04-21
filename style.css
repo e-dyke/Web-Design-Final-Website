@@ -63,6 +63,12 @@ h2 {
 	};
 }
 
+.logo {
+	background: #D6CEC4;
+	display: grid;
+	place-items: center;
+}
+
 footer {
 	color: #716658;
 	font-family: "Miranda Sans", sans-serif;
