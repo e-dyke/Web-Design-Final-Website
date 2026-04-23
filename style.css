@@ -5,7 +5,6 @@
 #nav {
 	list-style-type: none;
 	padding: 0;
-	background: #e8e8e8;
 }
 
 #nav ul {
@@ -35,6 +34,18 @@
  	font-weight: <weight>;
   	font-style: normal;
   	color: #716658;
+  	font-size: 20px;
+}
+
+.intro1 {
+	font-family: "Libertinus Serif Display", system-ui;
+  	font-weight: 400;
+  	font-style: normal;
+  	color: #716658;
+  	font-size: 20px;
+  	a[href^="mailto:"] {
+  		color: #716658;
+  	}
 }
 
 h1 {
@@ -52,7 +63,14 @@ h2 {
   	font-size: 2em;
 }
 
-#port-nav {
+.aslogo {
+	width: 150px;
+	margin: 0 auto;
+}
+
+#port-nav li{
+  	list-style: none;
+  	padding: 0;
 	font-family: "Miranda Sans", sans-serif;
 	color: #716658;
 	a:link {
@@ -61,6 +79,14 @@ h2 {
 	a:visited {
 		color: #716658;
 	};
+}
+
+#port-nav li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 40px;
 }
 
 .logo {
@@ -72,7 +98,149 @@ h2 {
 footer {
 	color: #716658;
 	font-family: "Miranda Sans", sans-serif;
+	background-color: #D6CEC4;
 }
+
+.return {
+	font-family: "Miranda Sans", sans-serif;
+}
+
+@media screen and (min-width: 300px) {
+
+	.images {
+		margin: 0 auto;
+		max-width: 1000px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+}
+
+@media screen and (min-width: 900px) {
+
+	#nav {
+	  display: flex;
+  	flex-flow: row;
+  	align-items: center; 
+  	list-style: none;
+  	padding: 0;
+  	margin: 0;
+  	background: #D6CEC4;
+	}
+
+	#nav li {
+  	margin-right: 15px;
+	}
+
+	#nav a {
+  	font-size: 16px;        
+  	line-height: 50px;      
+  	text-decoration: none;
+	}
+
+	#nav img {
+  	display: block;
+	} 
+
+	.images {
+		margin: 0 auto;
+		max-width: 1000px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+	#port-nav {
+  		display: grid;
+  		grid-template-columns: repeat(2, 1fr); 
+  		list-style: none;
+  		padding: 0;
+  		margin: 0;
+}
+
+#port-nav li {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+}
+
+}
+
+@media screen and (min-width: 1500px) {
+
+	#nav {
+	  display: flex;
+  	flex-flow: row;
+  	align-items: center; 
+  	list-style: none;
+  	padding: 0;
+  	margin: 0;
+  	background: #D6CEC4;
+	}
+
+	#nav li {
+  	margin-right: 15px;
+	}
+
+	#nav a {
+  	font-size: 16px;        
+  	line-height: 50px;      
+  	text-decoration: none;
+	}
+
+	#nav img {
+  	display: block;
+	} 
+
+	.images {
+		margin: 0 auto;
+		max-width: 1500px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+}
+
+@media screen and (min-width: 2000px) {
+
+	#nav {
+	  display: flex;
+  	flex-flow: row;
+  	align-items: center; 
+  	list-style: none;
+  	padding: 0;
+  	margin: 0;
+  	background: #D6CEC4;
+	}
+
+	#nav li {
+  	margin-right: 15px;
+	}
+
+	#nav a {
+  	font-size: 16px;        
+  	line-height: 50px;      
+  	text-decoration: none;
+	}
+
+	#nav img {
+  	display: block;
+	} 
+
+	.images {
+		margin: 0 auto;
+		max-width: 2000px;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 20px;
+	}
+
+}
+
+
 	/*
 	font-family: "Miranda Sans", sans-serif;
   	font-optical-sizing: auto;
@@ -84,4 +252,41 @@ footer {
   	font-weight: 400;
   	font-style: normal;
   	*/
+
+
+
+
+  	/*#port-nav li {
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 20px;
+		grid-template-areas:
+		"a b"
+		"c d"
+		"e .";
+	}
+
+.CERAMICS {
+	grid-area: a;
+}
+
+.DRAWINGS {
+	grid-area: b;
+}
+
+.JEWELRY {
+	grid-area: c;
+}
+
+.PAINTINGS {
+	grid-area: d;
+}
+
+.GRAPHIC-DESIGN {
+	grid-area: e;
+}*/
 
