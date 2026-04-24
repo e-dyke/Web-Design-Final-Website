@@ -78,7 +78,7 @@ h2 {
 	}
 	a:visited {
 		color: #716658;
-	};
+	}
 }
 
 #port-nav li{
@@ -103,6 +103,12 @@ footer {
 
 .return {
 	font-family: "Miranda Sans", sans-serif;
+	a:link {
+		color: #716658;
+	}
+	a:visited {
+		color: #716658;
+	}
 }
 
 @media screen and (min-width: 300px) {
